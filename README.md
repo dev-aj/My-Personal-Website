@@ -1,2 +1,3 @@
- # My first web page #myblog
- Thanks to various sites from which i have taken help. :)
+This is my personal website.
+Thanks to Medium and Freecodecamp.
+For Instagram embeding, I used "ELFSIGHT" api.

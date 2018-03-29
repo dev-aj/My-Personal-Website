@@ -1,45 +1,190 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <title>My first Blog Using CSS and HTML</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="description" content="A Little bit Information about Myself"/>
-        <meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content" />
-        <meta name="author" content="Amar" />
-        <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <link rel="stylesheet" type="text/css" href="style1.css" />
-		<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
-    </head>
-    <body id="page">
-        <ul class="slideshow">
-            <li><span>Image 01</span><div><h3>att·i·tude</h3></div></li>
-            <li><span>Image 02</span><div><h3>re·lax·a·tion</h3></div></li>
-            <li><span>Image 03</span><div><h3>bal·ance</h3></div></li>
-            <li><span>Image 04</span><div><h3>e·qua·nim·i·ty</h3></div></li>
-            <li><span>Image 05</span><div><h3>com·po·sure</h3></div></li>
-            <li><span>Image 06</span><div><h3>de·code·ers</h3></div></li>
-        </ul>
-        <div class="container">
-            
-            <div class="top">
-                
-                <span class="right">
-                    <a href="https://github.com/dev-aj/" target="_blank">Find This On GIT</a>
-                    
-                </span>
-                <div class="clr"></div>
-            </div>
-            <header>
-                <h1>WELCOME <span> to my BLOG</span></h1>
-                <h2>An enthusiastic Developer and Coder</h2></br>NEVER LOOSE YOUR PASSION.
-				<p class="buttons">
-					<a href="about.html" target="_blank">About</a>
-					<a href="contact.html" target="_blank">Project/Contact</a>
-				</p>
-            </header>
-        </div>
-    </body>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+	<meta charset="UTF-8">
+	<title>Welcome to My blog</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg fixed-top">
+	   	<a class="navbar-brand" data-value="home" href="#">Home</a>
+	   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	     <span class="navbar-toggler-icon"></span>
+	   </button>
+		<div class="collapse navbar-collapse " id="navbarSupportedContent">
+	     <ul class="navbar-nav mr-4">
+	       
+	       <li class="nav-item">
+	         <a class="nav-link" data-value="about" href="#">About</a>
+	       </li>
+	       <li class="nav-item">
+	         <a class="nav-link " data-value="work" href="#">Work</a>
+	       </li>
+	       <li class="nav-item">
+	         <a class="nav-link " data-value="blog" href="#">Blog</a>
+	       </li>
+	       <li class="nav-item">
+	         <a class="nav-link " data-value="instagram" href="#">Instagram</a>
+	       </li>
+	       <li class="nav-item">
+	         <a class="nav-link " data-value="contact" href="#">Contact</a>
+	       </li>
+	     </ul>
+  	 	</div>
+	</nav>
+	<header class="header" id="home">
+		<div class="overlay"></div>
+			<div class="container">
+				<div class="description text-center">
+					<h1>Hi...</h1>
+						<p>LET'S BUILD SOMETHING AMAZING TOGETHER</p>
+						<a data-value="about" href="#"> <button class="btn btn-outline-secondary">See More</button></a>
+				</div>
+			</div>
+	</header>
+	<div class="about overlay" id="about">
+		<h1 class="text-center">About Me</h1>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<img src="images/myself.jpg" class="img-fluid">
+				<span class="test-justify">Amar..An Entusiastic Developer</span>
+			</div>
+			<div class="col-lg-8 col-md-8 clo-sm-12 desc">
+				<h3>Amar Jyoti</h3>
+				<p>Hi, I am Amar Jyoti. Currently, I am persuing B.E. Degree in Computer Science and Engineering from BIT Mesra.</p>
+				<p>I want to make  better society and create a healthy and safe environment in terms of technology. A society where people know how to use technology safely. </p>
+				<p> I am obsessed with making new things, learning new technology and even more obsessed with making things better. I am interested in the field of android app development, web development and I am learning Linux and networking for system security.</p>
+			</div>
+		</div>
+	</div>
+	<!-- protfolio -->
+	<div class="portfolio overlay" id="work">
+		<h1 class="text-center">Field Of Interest</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-12">
+					<img src="images/portfolio/android.png" alt="Android" class="img-fluid">
+					<div class="des">
+						Android
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<img src="images/portfolio/linux.png" alt="Linux" class="img-fluid">
+					<div class="des">
+						Linux and Networking
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<img src="images/portfolio/web.png" alt="web" class="img-fluid">
+					<div class="des">
+						Web Devlopment
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Posts section -->
+	<div class="blog overlay" id="blog">
+	 <div class="container">
+	 	<h1 class="text-center">Blog</h1>
+		<div class="row">
+		   <div class="col-md-4 col-lg-4 col-sm-12">
+		    <div class="card">
+		     <div class="card-img">
+		      <img src="images/posts/android.jpg" class="img-fluid">
+		     </div>	     
+	     <div class="card-body">
+	     <h4 class="card-title">Android</h4>
+	      <p class="card-text">  
+	       15 Tips and Tricks for Android App Developers in 2017
+	      </p>
+	     </div>
+	     <div class="card-footer">
+	      <a href="https://blog.edx.org/15-tips-tricks-android-app-developers-2017" class="card-link" target="_blank">Read more</a>
+	     </div>
+	    </div>
+	   </div>
+	   <div class="col-md-4 col-lg-4 col-sm-12">
+	    <div class="card">
+	     <div class="card-img">
+	      <img src="images/posts/web.jpg" class="img-fluid">
+	     </div>
+	     
+	     <div class="card-body">
+	        <h4 class="card-title">Web-Devlopment</h4>
+	      <p class="card-text">       
+	      Google publishes a JavaScript style guide. Here are some key lessons.
+	      </p>
+	     </div>
+	     <div class="card-footer">
+	      <a href="https://medium.freecodecamp.org/google-publishes-a-javascript-style-guide-here-are-some-key-lessons-1810b8ad050b" class="card-link" target="_blank">Read more</a>
+	     </div>
+	    </div>
+	   </div>
+	   <div class="col-md-4 col-lg-4 col-sm-12">
+	    <div class="card">
+	     <div class="card-img">
+	      <img src="images/posts/security.jpg" class="img-fluid">
+	     </div>
+	     
+	     <div class="card-body">
+	     <h4 class="card-title">Security</h4>
+	      <p class="card-text">
+	      Who and What is coinhive??
+	      </p>
+	     </div>
+	     <div class="card-footer">
+	      <a href="https://krebsonsecurity.com/" class="card-link" target="_blank">Read more</a>
+	     </div>
+	    </div>
+	   </div>
+	  </div>
+	 </div>
+	</div>
+	<!-- Contact section -->
+<div class="contact" id="contact">
+ <div class="container">
+    <h1 class="text-center">Contact Me</h1>
+  <div class="row">
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="images/fb.png" class="img-fluid" alt="facebook">
+    <div class="des">
+      <a href="https://www.facebook.com/amar.jyoti.5494">Be my friend on Fb</a>
+     </div>
+    <span class="text-muted">Facebook</span>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="images/gmail.png" class="img-fluid" alt="Email">
+    <div class="des">
+       ajamar5943@gmail.com
+     </div>
+    <span class="text-muted">EmailMe</span>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="images/linkedin.png" class="img-fluid" alt="linkedin">
+    <div class="des">
+      <a href="https://www.linkedin.com/in/amar-jyoti-895484148/">Connect on linkedIn</a>
+     </div>
+    <span class="text-muted">LinkedIn</span>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="images/github.png" class="img-fluid" alt="git">
+     <div class="des">
+      <a href="https://github.com/dev-aj">Find Me On Git</a>
+     </div>
+    <span class="text-muted">GitHub</span>
+   </div>
+  </div>
+ </div>
+</div>
+	<div id="instagram">
+		<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+		<div class="elfsight-app-6e343263-b985-4343-a84c-a07d356aa697"></div>
+	</div>
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" type="text/javascript"></script>
+</body>
 </html>
